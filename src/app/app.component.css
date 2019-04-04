@@ -15,6 +15,7 @@ h2 {
 div{
   background-color: darkgoldenrod;
   background-size: contain;
+  padding: 30px;
 }
 
 button {
