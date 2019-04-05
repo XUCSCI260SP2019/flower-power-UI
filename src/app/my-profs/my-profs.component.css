@@ -3,25 +3,23 @@ h1 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
-  background-color: darkgoldenrod;
+  background-color: navy;
 }
 
 h2 {
-  color: goldenrod;
+  color: navy;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 175%;
 }
 
 div{
-  background-color: darkgoldenrod;
+  background-color: lightgrey;
   background-size: contain;
   padding: 30px;
-  width: 300px;
-
 }
 
 button {
-  background-color: darkgoldenrod;
+  background-color: navy;
   border: none;
   color: white;
   padding: 15px 32px;
