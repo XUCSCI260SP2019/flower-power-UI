@@ -8,6 +8,7 @@ import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
 import { ProfDetailComponent } from './prof-detail/prof-detail.component';
 import { MyProfsComponent } from './my-profs/my-profs.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MyProfsComponent } from './my-profs/my-profs.component';
     SearchComponent,
     LoginComponent,
     ProfDetailComponent,
-    MyProfsComponent
+    MyProfsComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
