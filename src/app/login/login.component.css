@@ -18,12 +18,6 @@ label{
   font-size: 100%;
 }
 
-div2{
-  background-color: darkblue;
-  background-size: contain;
-  padding: 30px;
-}
-
 div{
   background-color: darkblue;
   background-size: contain;
@@ -45,6 +39,7 @@ button {
 /* Bordered form */
 form {
   border: 3px solid white;
+  width: 400px;
 }
 
 /* Full-width inputs */
