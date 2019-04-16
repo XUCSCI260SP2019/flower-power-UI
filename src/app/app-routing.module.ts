@@ -7,15 +7,17 @@ import {LoginComponent} from './login/login.component';
 import {ProfDetailComponent} from './prof-detail/prof-detail.component';
 import {MyProfsComponent} from './my-profs/my-profs.component';
 import {UserComponent} from './user/user.component';
+import {BarComponent} from './bar/bar.component';
 
 const routes: Routes = [
-  { path : '', redirectTo: '/homePage', pathMatch: 'full'},
+  { path : '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'homePage', component: HomeComponent },
   { path: 'search', component: SearchComponent },
   { path : 'login', component: LoginComponent},
   { path : 'prof-detail', component: ProfDetailComponent},
   { path : 'my-prof', component: MyProfsComponent},
-  { path : 'user', component: UserComponent}
+  { path : 'user', component: UserComponent},
+  { path : 'bar', component: BarComponent}
 ];
 
 @NgModule({

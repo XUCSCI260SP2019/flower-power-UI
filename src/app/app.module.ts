@@ -10,6 +10,7 @@ import { ProfDetailComponent } from './prof-detail/prof-detail.component';
 import { MyProfsComponent } from './my-profs/my-profs.component';
 import { UserComponent } from './user/user.component';
 import { BarComponent } from './bar/bar.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BarComponent } from './bar/bar.component';
     ProfDetailComponent,
     MyProfsComponent,
     UserComponent,
-    BarComponent
+    BarComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
