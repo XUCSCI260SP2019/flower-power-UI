@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfDetailComponent } from './prof-detail/prof-detail.component';
 import { MyProfsComponent } from './my-profs/my-profs.component';
 import { UserComponent } from './user/user.component';
+import { BarComponent } from './bar/bar.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { UserComponent } from './user/user.component';
     LoginComponent,
     ProfDetailComponent,
     MyProfsComponent,
-    UserComponent
+    UserComponent,
+    BarComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@ import {MyProfsComponent} from './my-profs/my-profs.component';
 import {UserComponent} from './user/user.component';
 
 const routes: Routes = [
-  { path : '', redirectTo: '/login', pathMatch: 'full'},
+  { path : '', redirectTo: '/homePage', pathMatch: 'full'},
   { path: 'homePage', component: HomeComponent },
   { path: 'search', component: SearchComponent },
   { path : 'login', component: LoginComponent},
