@@ -8,6 +8,7 @@ import {ProfDetailComponent} from './prof-detail/prof-detail.component';
 import {MyProfsComponent} from './my-profs/my-profs.component';
 import {UserComponent} from './user/user.component';
 import {BarComponent} from './bar/bar.component';
+import {HeaderComponent} from './header/header.component';
 
 const routes: Routes = [
   { path : '', redirectTo: '/login', pathMatch: 'full'},
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path : 'prof-detail', component: ProfDetailComponent},
   { path : 'my-prof', component: MyProfsComponent},
   { path : 'user', component: UserComponent},
-  { path : 'bar', component: BarComponent}
+  { path : 'bar', component: BarComponent},
+  { path : 'header', component: HeaderComponent}
 ];
 
 @NgModule({
