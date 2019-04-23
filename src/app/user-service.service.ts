@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { User } from './user';
 
 @Injectable({
   providedIn: 'root'
@@ -6,8 +7,7 @@ import { Injectable } from '@angular/core';
 export class UserServiceService {
 
   constructor() {}
+  doLogin(user: User): void { }
 
-  getInfo() {
-    return true;
-  }
+  // look at hero.service to post user to url for back-end services
 }
