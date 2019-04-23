@@ -12,7 +12,7 @@ import {HeaderComponent} from './header/header.component';
 
 const routes: Routes = [
   { path : '', redirectTo: '/login', pathMatch: 'full'},
-  { path: 'homePage', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'search', component: SearchComponent },
   { path : 'login', component: LoginComponent},
   { path : 'prof-detail', component: ProfDetailComponent},

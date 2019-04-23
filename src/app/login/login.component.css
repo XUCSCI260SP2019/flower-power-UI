@@ -38,9 +38,9 @@ button {
 
 /* Bordered form */
 form {
-  border: 3px solid white;
   width: 400px;
   margin: 0 auto;
+  padding: 150px;
 }
 
 /* Full-width inputs */
