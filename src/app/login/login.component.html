@@ -8,7 +8,7 @@
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button routerLink="/home" type="submit">Login</button>
+    <button routerLink="/home" type="submit" (click)="login(uname, psw)">Login</button>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
