@@ -9,9 +9,9 @@ import { HttpClientJsonpModule} from '@angular/common/http';
 export class UserServiceService {
 
   constructor(
-    private http: HttpClientJsonpModule,
+    // private http: HttpClientJsonpModule,
   ) {}
-  doLogin(user: User): void { }
+  // doLogin(user: User): void { }
 
   // look at hero.service to post user to url for back-end services
 }
