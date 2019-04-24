@@ -12,7 +12,7 @@ import {HeaderComponent} from './header/header.component';
 import {LogoutComponent} from './logout/logout.component';
 
 const routes: Routes = [
-  { path : '', redirectTo: '/home', pathMatch: 'full'},
+  { path : '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'search', component: SearchComponent },
   { path : 'login', component: LoginComponent},
