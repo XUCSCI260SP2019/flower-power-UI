@@ -15,7 +15,9 @@ h2 {
 div{
   background-color: darkblue;
   background-size: contain;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
 }
 
 button {
