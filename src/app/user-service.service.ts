@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from './user';
 
-// import { HttpClientModule} from "@angular/common/http";
+import { HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import { User } from './user';
 export class UserServiceService {
 
   constructor(
-    // private http: HttpClientModule // JsonpModule, // this line isn't correct, causing login page to crash
+    private http: HttpClient
   ) {}
   doLogin(user: User): void { }
 
