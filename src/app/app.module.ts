@@ -17,6 +17,7 @@ import { UnapprovedRequestsComponent } from './unapproved-requests/unapproved-re
 import { ApprovedRequestsComponent } from './approved-requests/approved-requests.component';
 import { ProfListComponent } from './prof-list/prof-list.component';
 import { ReserveTimeComponent } from './reserve-time/reserve-time.component';
+import { NewUserComponent } from './new-user/new-user.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ReserveTimeComponent } from './reserve-time/reserve-time.component';
     UnapprovedRequestsComponent,
     ApprovedRequestsComponent,
     ProfListComponent,
-    ReserveTimeComponent
+    ReserveTimeComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
