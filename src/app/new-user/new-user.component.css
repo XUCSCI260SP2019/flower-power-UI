@@ -22,6 +22,8 @@ div{
   background-color: darkblue;
   background-size: contain;
   padding: 30px;
+  width: 400px;
+  margin: 0 auto;
 }
 
 button {
@@ -33,15 +35,14 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 150px;
-  margin: 10px;
+  width: 200px;
 }
 
 /* Bordered form */
 form {
   width: 400px;
   margin: 0 auto;
-  padding: 150px;
+  padding: 75px;
 }
 
 /* Full-width inputs */

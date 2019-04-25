@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -15,6 +16,9 @@ import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
 import { UnapprovedRequestsComponent } from './unapproved-requests/unapproved-requests.component';
 import { ApprovedRequestsComponent } from './approved-requests/approved-requests.component';
+import { ProfListComponent } from './prof-list/prof-list.component';
+import { ReserveTimeComponent } from './reserve-time/reserve-time.component';
+import { NewUserComponent } from './new-user/new-user.component';
 
 
 @NgModule({
@@ -31,11 +35,15 @@ import { ApprovedRequestsComponent } from './approved-requests/approved-requests
     FooterComponent,
     LogoutComponent,
     UnapprovedRequestsComponent,
-    ApprovedRequestsComponent
+    ApprovedRequestsComponent,
+    ProfListComponent,
+    ReserveTimeComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,6 +12,11 @@ h2 {
   font-size: 175%;
 }
 
+h3 {
+  color: navy;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 div{
   background-color: lightgrey;
   background-size: contain;
@@ -29,4 +34,7 @@ button {
   width: 200px;
 }
 
-
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
