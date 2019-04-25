@@ -12,6 +12,7 @@ import { UserComponent } from './user/user.component';
 import { BarComponent } from './bar/bar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     UserComponent,
     BarComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
