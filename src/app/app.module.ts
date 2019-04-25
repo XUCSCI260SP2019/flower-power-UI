@@ -16,6 +16,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { UnapprovedRequestsComponent } from './unapproved-requests/unapproved-requests.component';
 import { ApprovedRequestsComponent } from './approved-requests/approved-requests.component';
 import { ProfListComponent } from './prof-list/prof-list.component';
+import { ReserveTimeComponent } from './reserve-time/reserve-time.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ProfListComponent } from './prof-list/prof-list.component';
     LogoutComponent,
     UnapprovedRequestsComponent,
     ApprovedRequestsComponent,
-    ProfListComponent
+    ProfListComponent,
+    ReserveTimeComponent
   ],
   imports: [
     BrowserModule,
