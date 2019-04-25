@@ -11,11 +11,10 @@ export class LoginComponent implements OnInit {
 
   constructor(private userServiceService: UserServiceService) { } // create login function: to send to user.service
 
-  login(username: string, password: string): void {
-    this.userServiceService.doLogin({username, password} as User);
-  }
+ // login(username: string, password: string): void {
+   // this.userServiceService.doLogin({username, password} as User);
+  // }
 
   ngOnInit() {
   }
-
 }
