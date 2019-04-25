@@ -13,6 +13,8 @@ import { BarComponent } from './bar/bar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
+import { UnapprovedRequestsComponent } from './unapproved-requests/unapproved-requests.component';
+import { ApprovedRequestsComponent } from './approved-requests/approved-requests.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { LogoutComponent } from './logout/logout.component';
     BarComponent,
     HeaderComponent,
     FooterComponent,
-    LogoutComponent
+    LogoutComponent,
+    UnapprovedRequestsComponent,
+    ApprovedRequestsComponent
   ],
   imports: [
     BrowserModule,
