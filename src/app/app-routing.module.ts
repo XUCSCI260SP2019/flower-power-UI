@@ -16,22 +16,24 @@ import {ReserveTimeComponent} from './reserve-time/reserve-time.component';
 import {ProfListComponent} from './prof-list/prof-list.component';
 import {NewUserComponent} from './new-user/new-user.component';
 
+import {AuthGuardService as AuthGuard} from './auth-guard.service';
+
 const routes: Routes = [
   { path : '', redirectTo: '/login', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
-  { path: 'search', component: SearchComponent },
+  { path : 'new', component: NewUserComponent},
   { path : 'login', component: LoginComponent},
-  { path : 'prof-detail', component: ProfDetailComponent},
-  { path : 'my-prof', component: MyProfsComponent},
-  { path : 'user', component: UserComponent},
-  { path : 'bar', component: BarComponent},
-  { path : 'header', component: HeaderComponent},
-  { path : 'logout', component: LogoutComponent},
-  { path : 'approved', component: ApprovedRequestsComponent},
-  { path : 'pending', component: UnapprovedRequestsComponent},
-  { path : 'reserve', component: ReserveTimeComponent},
-  { path : 'profs', component: ProfListComponent},
-  { path : 'new', component: NewUserComponent}
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+  { path: 'search', component: SearchComponent, canActivate: [AuthGuard]  },
+  { path : 'prof-detail', component: ProfDetailComponent, canActivate: [AuthGuard] },
+  { path : 'my-prof', component: MyProfsComponent, canActivate: [AuthGuard] },
+  { path : 'user', component: UserComponent, canActivate: [AuthGuard] },
+  { path : 'bar', component: BarComponent, canActivate: [AuthGuard] },
+  { path : 'header', component: HeaderComponent, canActivate: [AuthGuard] },
+  { path : 'logout', component: LogoutComponent, canActivate: [AuthGuard] },
+  { path : 'approved', component: ApprovedRequestsComponent, canActivate: [AuthGuard] },
+  { path : 'pending', component: UnapprovedRequestsComponent, canActivate: [AuthGuard] },
+  { path : 'reserve', component: ReserveTimeComponent, canActivate: [AuthGuard] },
+  { path : 'profs', component: ProfListComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
