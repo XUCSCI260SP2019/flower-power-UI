@@ -1,4 +1,4 @@
-export class User {
+export class rUser {
   username: string;
   FirstName: string;
   LastName: string;
@@ -6,4 +6,12 @@ export class User {
   email: string;
   loggedIn: boolean;
   // store the information we receive from login
+
+  constructor() {}
+  setLogin(): void {
+    this.loggedIn = true;
+  }
+  login(): boolean {
+    return this.loggedIn;
+  }
 }

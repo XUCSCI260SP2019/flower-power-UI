@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { User } from './user';
+import { rUser } from './returnedUser';
 
 import { HttpClient, HttpHeaders} from '@angular/common/http';
-import {Observable} from "rxjs";
+import {Observable} from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -26,6 +27,7 @@ export class UserServiceService {
 
   getUser(): Observable<User> {
     const url = `${this.loginUrl}/${'*'}`;
+    rUser.setLogin();
     return this.http.get<User>(url);
   }
 
