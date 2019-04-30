@@ -1,4 +1,4 @@
-export class rUser {
+export class RUser {
   username: string;
   FirstName: string;
   LastName: string;
