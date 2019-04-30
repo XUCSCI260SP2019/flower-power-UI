@@ -4,6 +4,7 @@ import { RUser } from './returnedUser';
 
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
+import {tap} from 'rxjs/operators';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -14,21 +15,25 @@ const httpOptions = {
 })
 export class UserServiceService {
 
-  private loginUrl = 'localhost:8080/login';
-
+  private loginUrl = 'http://localhost:8080/login';
+  public loggedInUser: RUser;
   constructor(
     private http: HttpClient
-  ) {}
+  ) {
+    this.loggedInUser = new RUser();
+  }
 
-  doLogin(user: User): Observable<any> {
-    return this.http.put(this.loginUrl, user);
+  doLogin(user: User): Observable<RUser> {
+    return this.http.post<RUser>(this.loginUrl, user).pipe(tap(nuser => this.loggedInUser = nuser));
   }
   // create function to receive user
 
-  getUser(): Observable<User> {
-    const url = `${this.loginUrl}/${'*'}`;
-    RUser.setLogin();
-    return this.http.get<User>(url);
+  setLoggedIn() {
+    this.loggedInUser.loggedIn = true;
+  }
+
+  setLoggedOut() {
+    this.loggedInUser.loggedIn = false;
   }
 
 
