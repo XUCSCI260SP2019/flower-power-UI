@@ -1,6 +1,7 @@
 
 <form action="action_page.php">
 
+
   <div class="container">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
@@ -16,9 +17,14 @@
       <input type="checkbox" name="professor"> Professor
     </label>
 
+
+    <button routerLink="/new">New User</button>
+
     <button (click)="login(uname, psw, student, professor)">Login</button>
+
 
   </div>
 
 </form>
+
 

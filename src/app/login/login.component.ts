@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   // this might no be working? it's not currently called anywhere, so call it after going login?
   goBack(): void {
-    this.location.go('./home');
+    this.location.go('/home');
   }
 
   ngOnInit() {
