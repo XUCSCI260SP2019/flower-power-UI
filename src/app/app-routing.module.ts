@@ -18,20 +18,20 @@ import {NewUserComponent} from './new-user/new-user.component';
 
 const routes: Routes = [
   { path : '', redirectTo: '/login', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
-  { path: 'search', component: SearchComponent },
+  { path : 'new', component: NewUserComponent},
   { path : 'login', component: LoginComponent},
-  { path : 'prof-detail', component: ProfDetailComponent},
+  { path: 'home', component: HomeComponent},
+  { path: 'search', component: SearchComponent},
+  { path : 'prof-detail', component: ProfDetailComponent },
   { path : 'my-prof', component: MyProfsComponent},
   { path : 'user', component: UserComponent},
   { path : 'bar', component: BarComponent},
   { path : 'header', component: HeaderComponent},
   { path : 'logout', component: LogoutComponent},
   { path : 'approved', component: ApprovedRequestsComponent},
-  { path : 'pending', component: UnapprovedRequestsComponent},
+  { path : 'pending', component: UnapprovedRequestsComponent },
   { path : 'reserve', component: ReserveTimeComponent},
-  { path : 'profs', component: ProfListComponent},
-  { path : 'new', component: NewUserComponent}
+  { path : 'profs', component: ProfListComponent}
 ];
 
 @NgModule({
