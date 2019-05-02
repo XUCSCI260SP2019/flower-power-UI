@@ -14,17 +14,19 @@ const httpOptions = {
 })
 export class ProfDetailsService {
   private newProfDetailsURL = 'http://localhost:8080/professors'; // root
+  private newProfSingleURL = 'http://localhost:8080/professors/';
   public professor: ProfDetails;
 
   constructor(
     private http: HttpClient
    ) { }
 
-   showProfList(prof: ProfDetails): Observable<ProfDetails> { // get list of professors
-    return this.http.put(this.newProfDetailsURL, prof);
+   showProfList(): Observable<ProfDetails[]> { // get list of professors
+    return this.http.get<ProfDetails[]>(this.newProfDetailsURL);
    }
    showProfDetails(prof: ProfDetails): Observable<ProfDetails> { // get details for one professor
-     return this.http.put(this.newProfDetailsURL, prof);
+      const url = `${this.newProfSingleURL}/${prof.id}`
+      return this.http.get<ProfDetails>(this.newProfSingleURL);
    }
 }
 

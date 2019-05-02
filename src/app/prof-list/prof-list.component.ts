@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfDetailsService} from '../prof-details.service';
+import {ProfDetails} from '../prof-details';
 
 @Component({
   selector: 'app-prof-list',
@@ -7,12 +8,13 @@ import { ProfDetailsService} from '../prof-details.service';
   styleUrls: ['./prof-list.component.css']
 })
 export class ProfListComponent implements OnInit {
-  professor: any;
+  professors: ProfDetails[];
 
   constructor(private profDetailsService: ProfDetailsService) { }
 
   ngOnInit() {
-    this.profDetailsService.showProfDetails();
+    this.profDetailsService.showProfList().subscribe(profs => this.professors = profs);
   }
+  // professor name isn't link yet
 
 }

@@ -17,6 +17,8 @@ export class LoginComponent implements OnInit {
 
   ) {}
   login(username: string, password: string, student: boolean, professor: boolean): void {
+
+    console.log(username);
     this.userServiceService.doLogin({username, password, student, professor} as User)
       .subscribe((user) => {
         if (user.email === '' ) {
