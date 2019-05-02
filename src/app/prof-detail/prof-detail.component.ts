@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProfDetailComponent implements OnInit {
   professors: ProfDetails;
-  id: number
+  id: number;
 
   constructor(
     private profDetailsService: ProfDetailsService,
@@ -23,7 +23,8 @@ export class ProfDetailComponent implements OnInit {
 
   getProfessor(): void {
     const id: number = +this.route.snapshot.paramMap.get('id');
-    this.profDetailsService.showProfDetails(id);
+    this.profDetailsService.showProfDetails(id).subscribe(professors => this.professors = professors);
+    console.log(this.professors);
   }
 
 }
