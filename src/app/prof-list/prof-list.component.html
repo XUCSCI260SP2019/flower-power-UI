@@ -1,8 +1,10 @@
 <h2>Professors</h2>
 <ul>
 
-  <ng-container *ngFor="let professor of cart">
-    {{professor.fullName}}
-    {{professor.email}}
+  <ng-container *ngFor="let professor of professors">
+    <button>
+      <h3>{{professor.fullName}}</h3>
+      <h4>{{professor.email}}</h4>
+    </button>
   </ng-container>
 </ul>

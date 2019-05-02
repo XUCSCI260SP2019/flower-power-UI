@@ -13,7 +13,10 @@ export class ProfListComponent implements OnInit {
   constructor(private profDetailsService: ProfDetailsService) { }
 
   ngOnInit() {
-    this.profDetailsService.showProfList().subscribe(profs => this.professors = profs);
+    this.profDetailsService.showProfList().subscribe(profs => {
+      this.professors = profs;
+      console.log(profs);
+    });
   }
   // professor name isn't link yet
 
