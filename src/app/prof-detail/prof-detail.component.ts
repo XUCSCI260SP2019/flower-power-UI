@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfDetailsService} from '../prof-details.service';
+import {ProfDetails} from '../prof-details';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-prof-detail',
@@ -6,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./prof-detail.component.css']
 })
 export class ProfDetailComponent implements OnInit {
+  professors: ProfDetails;
+  id: number
 
-  constructor() { }
+  constructor(
+    private profDetailsService: ProfDetailsService,
+    private route: ActivatedRoute,
+  ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.getProfessor();
+  }
+
+  getProfessor(): void {
+    const id: number = +this.route.snapshot.paramMap.get('id');
+    this.profDetailsService.showProfDetails(id);
   }
 
 }

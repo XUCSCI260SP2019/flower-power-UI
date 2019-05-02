@@ -25,8 +25,8 @@ export class ProfDetailsService {
     console.log('Calling Professor List');
     return this.http.get<ProfDetails[]>(this.newProfDetailsURL);
    }
-   showProfDetails(prof: ProfDetails): Observable<ProfDetails> { // get details for one professor
-      const url = `${this.newProfSingleURL}/${prof.id}`
+   showProfDetails(id: number): Observable<ProfDetails> { // get details for one professor
+      const url = `${this.newProfSingleURL}/${id}`
       return this.http.get<ProfDetails>(this.newProfSingleURL);
    }
 }

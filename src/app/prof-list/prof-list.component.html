@@ -2,9 +2,10 @@
 <ul>
 
   <ng-container *ngFor="let professor of professors">
-    <button>
+    <button routerLink="/prof-detail/{{professor.id}}">
       <h3>{{professor.fullName}}</h3>
       <h4>{{professor.email}}</h4>
     </button>
   </ng-container>
 </ul>
+

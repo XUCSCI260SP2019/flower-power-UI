@@ -18,7 +18,7 @@ const routes: Routes = [
   { path : '', redirectTo: '/login', pathMatch: 'full'},
   { path : 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent},
-  { path : 'prof-detail', component: ProfDetailComponent },
+  { path : 'prof-detail/:id', component: ProfDetailComponent },
   { path : 'my-prof', component: MyProfsComponent},
   { path : 'user', component: UserComponent},
   { path : 'bar', component: BarComponent},
