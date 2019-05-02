@@ -1,8 +1,6 @@
 export class RUser {
   username: string;
-  FirstName: string;
-  LastName: string;
+  FullName: string;
   admin: boolean;
-  email: string;
   loggedIn: boolean;
 }

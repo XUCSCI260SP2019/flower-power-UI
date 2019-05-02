@@ -15,7 +15,8 @@ const httpOptions = {
 })
 export class UserServiceService {
 
-  private loginUrl = 'http://localhost:8080/login';
+  private loginUrlS = 'http://localhost:8080/students/{id}';
+  private loginUrlP = 'http://localhost:8080/professors/{id}';
   public loggedInUser: RUser;
   constructor(
     private http: HttpClient
@@ -24,7 +25,10 @@ export class UserServiceService {
   }
 
   doLogin(user: User): Observable<RUser> {
-    return this.http.post<RUser>(this.loginUrl, user).pipe(tap(nuser => this.loggedInUser = nuser));
+    if (user.student === true) {
+      return this.http.post<RUser>(this.loginUrlS, user).pipe(tap(nuser => this.loggedInUser = nuser));
+    }
+    return this.http.post<RUser>(this.loginUrlP, user).pipe(tap(nuser => this.loggedInUser = nuser));
   }
   // create function to receive user
 

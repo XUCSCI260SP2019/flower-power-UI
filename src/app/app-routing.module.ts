@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import {HomeComponent} from './home/home.component';
-import {SearchComponent} from './search/search.component';
 import {LoginComponent} from './login/login.component';
 import {ProfDetailComponent} from './prof-detail/prof-detail.component';
 import {MyProfsComponent} from './my-profs/my-profs.component';
@@ -14,14 +13,11 @@ import {ApprovedRequestsComponent} from './approved-requests/approved-requests.c
 import {UnapprovedRequestsComponent} from './unapproved-requests/unapproved-requests.component';
 import {ReserveTimeComponent} from './reserve-time/reserve-time.component';
 import {ProfListComponent} from './prof-list/prof-list.component';
-import {NewUserComponent} from './new-user/new-user.component';
 
 const routes: Routes = [
   { path : '', redirectTo: '/login', pathMatch: 'full'},
-  { path : 'new', component: NewUserComponent},
   { path : 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent},
-  { path: 'search', component: SearchComponent},
   { path : 'prof-detail', component: ProfDetailComponent },
   { path : 'my-prof', component: MyProfsComponent},
   { path : 'user', component: UserComponent},

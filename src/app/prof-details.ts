@@ -1,4 +1,4 @@
-export class ProfDetails{
+export class ProfDetails {
   profName: string;
   profEmail: string;
   profOffice: string;

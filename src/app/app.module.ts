@@ -5,7 +5,6 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
 import { ProfDetailComponent } from './prof-detail/prof-detail.component';
 import { MyProfsComponent } from './my-profs/my-profs.component';
@@ -18,14 +17,12 @@ import { UnapprovedRequestsComponent } from './unapproved-requests/unapproved-re
 import { ApprovedRequestsComponent } from './approved-requests/approved-requests.component';
 import { ProfListComponent } from './prof-list/prof-list.component';
 import { ReserveTimeComponent } from './reserve-time/reserve-time.component';
-import { NewUserComponent } from './new-user/new-user.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SearchComponent,
     LoginComponent,
     ProfDetailComponent,
     MyProfsComponent,
@@ -37,8 +34,7 @@ import { NewUserComponent } from './new-user/new-user.component';
     UnapprovedRequestsComponent,
     ApprovedRequestsComponent,
     ProfListComponent,
-    ReserveTimeComponent,
-    NewUserComponent
+    ReserveTimeComponent
   ],
   imports: [
     BrowserModule,

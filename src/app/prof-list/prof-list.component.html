@@ -1,3 +1,8 @@
-<p>
-  When searching, this is the list of professors.
-</p>
+<h2>Professors</h2>
+<ul>
+
+  <ng-container *ngFor="let professor of cart">
+    {{professor.fullName}}
+    {{professor.email}}
+  </ng-container>
+</ul>

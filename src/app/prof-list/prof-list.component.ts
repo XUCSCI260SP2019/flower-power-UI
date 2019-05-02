@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfDetailsService} from '../prof-details.service';
 
 @Component({
   selector: 'app-prof-list',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./prof-list.component.css']
 })
 export class ProfListComponent implements OnInit {
+  professor: any;
 
-  constructor() { }
+  constructor(private profDetailsService: ProfDetailsService) { }
 
   ngOnInit() {
+    this.profDetailsService.showProfDetails();
   }
 
 }
