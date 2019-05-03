@@ -7,8 +7,7 @@
   <ul>
 
     <ng-container *ngFor="let professor of professors">
-      <button >
-        <button routerLink="/prof-menu/{{professor.id}}"></button>
+      <button routerLink="/prof-menu/{{professor.id}}">
         <h3>{{professor.fullName}}</h3>
         <h4>{{professor.email}}</h4>
       </button>
