@@ -1,7 +1,7 @@
 <h3>
   Reserve Time
 </h3>
-<form>
+<form action="action_page.php">
 <div class="container">
   <label for="start"><b>Start Time</b></label>
   <input type="start" placeholder="Start" name="starttime" required>
@@ -12,6 +12,6 @@
   <label for="name"><b>First and Last Name</b></label>
   <input type="name" placeholder="Name" name="fullname" required>
 
-  <button type= submit (click)="reserveTime(starttime, endtime, fullname)">Request Time</button>
+  <button type= submit (click)="reserveTime(starttime, endtime, Name)">Request Time</button>
 </div>
 </form>
