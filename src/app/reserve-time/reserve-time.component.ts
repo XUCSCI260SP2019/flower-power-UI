@@ -11,14 +11,13 @@ export class ReserveTimeComponent implements OnInit {
 
   constructor(
     private reservationsService: ReservationsService,
-    private request: Request
   ) { }
 
   ngOnInit() {
   }
 
-  // reserveTime(starttime: string, endtime: string, fullname: string): void {
-  //   this.reservationsService.requestTime(starttime, endtime, fullname);
-  // }
+  reserveTime(starttime: string, endtime: string, fullname: string): void {
+    this.reservationsService.requestTime(starttime, endtime, fullname);
+  }
 }
 
