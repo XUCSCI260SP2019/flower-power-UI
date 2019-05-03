@@ -23,7 +23,10 @@ export class ProfDetailComponent implements OnInit {
 
   getProfessor(): void {
     const id: number = +this.route.snapshot.paramMap.get('id');
-    this.profDetailsService.showProfDetails(id).subscribe(professors => this.professors = professors);
+    this.profDetailsService.showProfDetails(id).subscribe(profs => {
+      this.professors = profs;
+      console.log(profs);
+    });
     console.log(this.professors);
   }
 

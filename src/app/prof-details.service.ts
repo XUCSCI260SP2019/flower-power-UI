@@ -14,7 +14,6 @@ const httpOptions = {
 })
 export class ProfDetailsService {
   private newProfDetailsURL = 'http://localhost:8080/professors'; // root
-  private newProfSingleURL = 'http://localhost:8080/professors/';
   public professor: ProfDetails;
 
   constructor(
@@ -26,9 +25,9 @@ export class ProfDetailsService {
     return this.http.get<ProfDetails[]>(this.newProfDetailsURL);
    }
    showProfDetails(id: number): Observable<ProfDetails> { // get details for one professor
-      const url = `${this.newProfSingleURL}/${id}`
+      const url = `${this.newProfDetailsURL}/${id}`
       console.log(id);
-      return this.http.get<ProfDetails>(this.newProfSingleURL);
+      return this.http.get<ProfDetails>(url);
    }
 }
 
