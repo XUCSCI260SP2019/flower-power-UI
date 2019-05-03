@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ReservationsService} from '../reservations.service';
+import { Request } from '../request';
 
 @Component({
   selector: 'app-reserve-time',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReserveTimeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private reservationsService: ReservationsService,
+    private request: Request
+  ) { }
 
   ngOnInit() {
   }
 
+  // reserveTime(starttime: string, endtime: string, fullname: string): void {
+  //   this.reservationsService.requestTime(starttime, endtime, fullname);
+  // }
 }
+
