@@ -13,7 +13,8 @@ import {ApprovedRequestsComponent} from './approved-requests/approved-requests.c
 import {UnapprovedRequestsComponent} from './unapproved-requests/unapproved-requests.component';
 import {ReserveTimeComponent} from './reserve-time/reserve-time.component';
 import {ProfListComponent} from './prof-list/prof-list.component';
-import {ProfSigninComponent} from './prof-signin/prof-signin.component'
+import {ProfSigninComponent} from './prof-signin/prof-signin.component';
+import {ProfMenuComponent} from './prof-menu/prof-menu.component'
 
 const routes: Routes = [
   { path : '', redirectTo: '/login', pathMatch: 'full'},
@@ -29,7 +30,8 @@ const routes: Routes = [
   { path : 'pending', component: UnapprovedRequestsComponent },
   { path : 'reserve', component: ReserveTimeComponent},
   { path : 'profs', component: ProfListComponent},
-  { path: 'prof-signin', component: ProfSigninComponent}
+  { path: 'prof-signin', component: ProfSigninComponent},
+  {path: 'prof-menu', component: ProfMenuComponent}
 ];
 
 @NgModule({

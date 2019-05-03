@@ -18,6 +18,8 @@ import { ApprovedRequestsComponent } from './approved-requests/approved-requests
 import { ProfListComponent } from './prof-list/prof-list.component';
 import { ReserveTimeComponent } from './reserve-time/reserve-time.component';
 import { ProfSigninComponent } from './prof-signin/prof-signin.component';
+import { ProfMenuComponent } from './prof-menu/prof-menu.component';
+
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { ProfSigninComponent } from './prof-signin/prof-signin.component';
     ApprovedRequestsComponent,
     ProfListComponent,
     ReserveTimeComponent,
-    ProfSigninComponent
+    ProfSigninComponent,
+    ProfMenuComponent
   ],
   imports: [
     BrowserModule,
