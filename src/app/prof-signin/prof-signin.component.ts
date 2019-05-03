@@ -11,7 +11,7 @@ import {ProfDetails} from '../prof-details';
   styleUrls: ['./prof-signin.component.css']
 })
 export class ProfSigninComponent implements OnInit {
-  professor: ProfDetails[];
+  professors: ProfDetails[];
 
   constructor(
     private route: ActivatedRoute,
@@ -21,7 +21,7 @@ export class ProfSigninComponent implements OnInit {
 
   ngOnInit() {
     this.profDetailsService.showProfList().subscribe(profs => {
-      this.professor = profs;
+      this.professors = profs;
       console.log(profs);
       });
 
