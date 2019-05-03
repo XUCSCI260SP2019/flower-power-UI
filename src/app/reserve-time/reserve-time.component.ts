@@ -17,6 +17,7 @@ export class ReserveTimeComponent implements OnInit {
   }
 
   reserveTime(starttime: string, endtime: string, fullname: string): void {
+    console.log(starttime, endtime, fullname);
     this.reservationsService.requestTime(starttime, endtime, fullname);
   }
 }

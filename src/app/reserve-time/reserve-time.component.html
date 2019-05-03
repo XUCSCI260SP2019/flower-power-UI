@@ -1,17 +1,17 @@
 <h3>
   Reserve Time
 </h3>
-
+<form>
 <div class="container">
   <label for="start"><b>Start Time</b></label>
-  <input type="text" placeholder="Start Time" name="start" required>
+  <input type="start" placeholder="Start" name="starttime" required>
 
   <label for="end"><b>End Time</b></label>
-  <input type="text" placeholder="End Time" name="end" required>
+  <input type="end" placeholder="End" name="endtime" required>
 
   <label for="name"><b>First and Last Name</b></label>
-  <input type="text" placeholder="Name" name="fullname" required>
+  <input type="name" placeholder="Name" name="fullname" required>
 
-  <button onclick="reserveTime(start, end, fullName)">Request Time</button>
+  <button type= submit (click)="reserveTime(starttime, endtime, fullname)">Request Time</button>
 </div>
-
+</form>
