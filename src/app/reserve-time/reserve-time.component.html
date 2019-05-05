@@ -2,16 +2,65 @@
   Reserve Time
 </h3>
 <form>
-<div class="container">
-  <label for="start"><b>Start Time</b></label>
-  <input type="start" placeholder="Start" name="starttime" required>
+  <div class="dropdown">
+    <button (click)="startTimeHour()" class="dropbtn">Start Time (Hour)</button>
+    <div id="startHourDrop" class="dropdown-content">
+      <a href="#8">8</a>
+      <a href="#9">9</a>
+      <a href="#10">10</a>
+      <a href="#11">11</a>
+      <a href="#12">12</a>
+      <a href="#1">1</a>
+      <a href="#2">2</a>
+      <a href="#3">3</a>
+      <a href="#4">4</a>
+      <a href="#5">5</a>
+    </div>
+  </div>
 
-  <label for="end"><b>End Time</b></label>
-  <input type="end" placeholder="End" name="endtime" required>
+  <div class="dropdown">
+    <button (click)="startTimeMinute()" class="dropbtn">Start Time (Minute)</button>
+    <div id="startMinuteDrop" class="dropdown-content">
+      <a href="#00-15">00-15</a>
+      <a href="#15-30">15-30</a>
+      <a href="#30-45">30-45</a>
+      <a href="#45-00">45-00</a>
+    </div>
+  </div>
 
-  <label for="name"><b>First and Last Name</b></label>
-  <input type="name" placeholder="Name" name="fullname" required>
+  <div class="dropdown">
+    <button (click)="endTimeHour()" class="dropbtn">End Time (Hour)</button>
+    <div id="endHourDrop" class="dropdown-content">
+      <a href="#8">8</a>
+      <a href="#9">9</a>
+      <a href="#10">10</a>
+      <a href="#11">11</a>
+      <a href="#12">12</a>
+      <a href="#1">1</a>
+      <a href="#2">2</a>
+      <a href="#3">3</a>
+      <a href="#4">4</a>
+      <a href="#5">5</a>
+    </div>
+  </div>
 
-  <button type= submit (click)="reserveTime(starttime, endtime, Name)">Request Time</button>
-</div>
+  <div class="dropdown">
+    <button (click)="endTimeMinute()" class="dropbtn">End Time (Minute)</button>
+    <div id="endMinuteDrop" class="dropdown-content">
+      <a href="#00-15">00-15</a>
+      <a href="#15-30">15-30</a>
+      <a href="#30-45">30-45</a>
+      <a href="#45-00">45-00</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button (click)="studentName()" class="dropbtn">Student Name</button>
+    <div id="studentDrop" class="dropdown-content">
+      <a href="#bobjim">Bob Jim</a>
+      <a href="#jimbob">Jim Bob</a>
+      <a href="#notbob">Not Bob</a>
+    </div>
+  </div>
 </form>
+
