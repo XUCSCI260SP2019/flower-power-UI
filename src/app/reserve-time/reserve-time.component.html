@@ -3,63 +3,68 @@
 </h3>
 <form>
   <div class="dropdown">
-    <button (click)="startTimeHour()" class="dropbtn">Start Time (Hour)</button>
+    <div  class="dropbtn">Start Time (Hour)</div>
     <div id="startHourDrop" class="dropdown-content">
-      <a href="#8">8</a>
-      <a href="#9">9</a>
-      <a href="#10">10</a>
-      <a href="#11">11</a>
-      <a href="#12">12</a>
-      <a href="#1">1</a>
-      <a href="#2">2</a>
-      <a href="#3">3</a>
-      <a href="#4">4</a>
-      <a href="#5">5</a>
+      <a (click)="startTimeHour('8')">8</a>
+      <a (click)="startTimeHour('9')">9</a>
+      <a (click)="startTimeHour('10')">10</a>
+      <a (click)="startTimeHour('11')">11</a>
+      <a (click)="startTimeHour('12')">12</a>
+      <a (click)="startTimeHour('1')">1</a>
+      <a (click)="startTimeHour('2')">2</a>
+      <a (click)="startTimeHour('3')">3</a>
+      <a (click)="startTimeHour('4')">4</a>
+      <a (click)="startTimeHour('5')">5</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <button (click)="startTimeMinute()" class="dropbtn">Start Time (Minute)</button>
+    <div  class="dropbtn">Start Time (Minute)</div>
     <div id="startMinuteDrop" class="dropdown-content">
-      <a href="#00-15">00-15</a>
-      <a href="#15-30">15-30</a>
-      <a href="#30-45">30-45</a>
-      <a href="#45-00">45-00</a>
+      <a (click)="startTimeMinute(':00')">00</a>
+      <a (click)="startTimeMinute(':15')">15</a>
+      <a (click)="startTimeMinute(':30')">30</a>
+      <a (click)="startTimeMinute(':45')">45</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <button (click)="endTimeHour()" class="dropbtn">End Time (Hour)</button>
+    <div  class="dropbtn">End Time (Hour)</div>
     <div id="endHourDrop" class="dropdown-content">
-      <a href="#8">8</a>
-      <a href="#9">9</a>
-      <a href="#10">10</a>
-      <a href="#11">11</a>
-      <a href="#12">12</a>
-      <a href="#1">1</a>
-      <a href="#2">2</a>
-      <a href="#3">3</a>
-      <a href="#4">4</a>
-      <a href="#5">5</a>
+      <a (click)="endTimeHour('8')">8</a>
+      <a (click)="endTimeHour('9')">9</a>
+      <a (click)="endTimeHour('10')">10</a>
+      <a (click)="endTimeHour('11')">11</a>
+      <a (click)="endTimeHour('12')">12</a>
+      <a (click)="endTimeHour('1')">1</a>
+      <a (click)="endTimeHour('2')">2</a>
+      <a (click)="endTimeHour('3')">3</a>
+      <a (click)="endTimeHour('4')">4</a>
+      <a (click)="endTimeHour('5')">5</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <button (click)="endTimeMinute()" class="dropbtn">End Time (Minute)</button>
+    <div  class="dropbtn">End Time (Minute)</div>
     <div id="endMinuteDrop" class="dropdown-content">
-      <a href="#00-15">00-15</a>
-      <a href="#15-30">15-30</a>
-      <a href="#30-45">30-45</a>
-      <a href="#45-00">45-00</a>
+      <a (click)="endTimeMinute(':15')">15</a>
+      <a (click)="endTimeMinute(':30')">30</a>
+      <a (click)="endTimeMinute(':45')">45</a>
+      <a (click)="endTimeMinute(':00')">00</a>
     </div>
   </div>
 
+
+
   <div class="dropdown">
-    <button (click)="studentName()" class="dropbtn">Student Name</button>
+    <div class="dropbtn">Student Name</div>
     <div id="studentDrop" class="dropdown-content">
-      <a href="#bobjim">Bob Jim</a>
-      <a href="#jimbob">Jim Bob</a>
-      <a href="#notbob">Not Bob</a>
+      <a (click)="studentName('Bob Jim')">Bob Jim</a>
+      <a (click)="studentName('Jim Bob')">Jim Bob</a>
+      <a (click)="studentName('Not Bob')">Not Bob</a>
     </div>
   </div>
+
+  <button (click)="reserveTime()">Submit</button>
 </form>
+
