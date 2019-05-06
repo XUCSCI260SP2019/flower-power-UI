@@ -1,12 +1,14 @@
 <app-header></app-header>
   <form>
+    <ng-container *ngIf="professors">
     <div style="text-align:center">
       <h1>
         Meetings
       </h1>
-      <button routerLink="/pending/{{professor.id}}"> Unapproved Requests </button>
-      <button routerLink="/approved/{{professor.id}}"> Approved Requests</button>
+      <button routerLink="/pending/{{professors.id}}"> Unapproved Requests </button>
+      <button routerLink="/approved/{{professors.id}}"> Approved Requests</button>
     </div>
+    </ng-container>
   </form>
 <app-footer></app-footer>
 
