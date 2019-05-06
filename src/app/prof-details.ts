@@ -1,7 +1,9 @@
 export class ProfDetails {
   fullName: string;
   email: string;
-  profOffice: string;
-  profHours: string;
+  officeBuilding: string;
+  officeRoom: string;
+  officeHourEnd: string;
+  officeHourStart: string;
   id: number;
 }
