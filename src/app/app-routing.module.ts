@@ -16,6 +16,7 @@ import {ProfSigninComponent} from './prof-signin/prof-signin.component';
 import {ProfMenuComponent} from './prof-menu/prof-menu.component';
 import {ProfBarComponent} from './prof-bar/prof-bar.component';
 import {ProfHeaderComponent} from './prof-header/prof-header.component';
+import {ConfirmationComponent} from './confirmation/confirmation.component';
 
 
 const routes: Routes = [
@@ -34,7 +35,8 @@ const routes: Routes = [
   {path: 'prof-menu/:id', component: ProfMenuComponent},
   {path: 'prof-bar', component: ProfBarComponent },
   { path: 'prof-menu', component: ProfMenuComponent },
-  { path: 'prof-header', component: ProfHeaderComponent }
+  { path: 'prof-header', component: ProfHeaderComponent },
+  { path: 'confirmation', component: ConfirmationComponent }
 ];
 
 @NgModule({
