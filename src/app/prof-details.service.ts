@@ -14,7 +14,6 @@ const httpOptions = {
 })
 export class ProfDetailsService {
   private newProfDetailsURL = 'http://localhost:8080/professors'; // root
-  public professor: ProfDetails;
 
   constructor(
     private http: HttpClient

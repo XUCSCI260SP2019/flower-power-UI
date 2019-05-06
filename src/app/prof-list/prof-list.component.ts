@@ -18,6 +18,5 @@ export class ProfListComponent implements OnInit {
       console.log(profs);
     });
   }
-  // professor name isn't link yet
 
 }
