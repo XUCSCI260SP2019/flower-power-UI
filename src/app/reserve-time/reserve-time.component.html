@@ -21,10 +21,10 @@
   <div class="dropdown">
     <div  class="dropbtn">Start Time (Minute)</div>
     <div id="startMinuteDrop" class="dropdown-content">
-      <a (click)="startTimeMinute(':00')">00</a>
-      <a (click)="startTimeMinute(':15')">15</a>
-      <a (click)="startTimeMinute(':30')">30</a>
-      <a (click)="startTimeMinute(':45')">45</a>
+      <a (click)="startTimeMinute('.00-')">00</a>
+      <a (click)="startTimeMinute('.15-')">15</a>
+      <a (click)="startTimeMinute('.30-')">30</a>
+      <a (click)="startTimeMinute('.45-')">45</a>
     </div>
   </div>
 
@@ -47,10 +47,10 @@
   <div class="dropdown">
     <div  class="dropbtn">End Time (Minute)</div>
     <div id="endMinuteDrop" class="dropdown-content">
-      <a (click)="endTimeMinute(':15')">15</a>
-      <a (click)="endTimeMinute(':30')">30</a>
-      <a (click)="endTimeMinute(':45')">45</a>
-      <a (click)="endTimeMinute(':00')">00</a>
+      <a (click)="endTimeMinute('.15')">15</a>
+      <a (click)="endTimeMinute('.30')">30</a>
+      <a (click)="endTimeMinute('.45')">45</a>
+      <a (click)="endTimeMinute('.00')">00</a>
     </div>
   </div>
 
@@ -65,6 +65,6 @@
     </div>
   </div>
 
-  <button (click)="reserveTime()" routerLink="/confirmation">Submit</button>
+  <button (click)="reserveTime()" >Submit</button>
 </form>
 
