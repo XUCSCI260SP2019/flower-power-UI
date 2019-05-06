@@ -32,6 +32,7 @@ button {
   display: inline-block;
   font-size: 16px;
   width: 200px;
+  margin: 10px;
 }
 
 
@@ -40,7 +41,7 @@ button:hover {
   opacity: 0.8;
 }
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: navy;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -55,7 +56,7 @@ button:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -68,8 +69,8 @@ button:hover {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: lightgrey;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: gray;}
