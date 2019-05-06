@@ -7,9 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { ProfDetailComponent } from './prof-detail/prof-detail.component';
-import { MyProfsComponent } from './my-profs/my-profs.component';
-import { UserComponent } from './user/user.component';
 import { BarComponent } from './bar/bar.component';
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
@@ -28,8 +27,6 @@ import { ProfMenuComponent } from './prof-menu/prof-menu.component';
     HomeComponent,
     LoginComponent,
     ProfDetailComponent,
-    MyProfsComponent,
-    UserComponent,
     BarComponent,
     HeaderComponent,
     FooterComponent,
