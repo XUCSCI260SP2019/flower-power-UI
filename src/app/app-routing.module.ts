@@ -14,6 +14,9 @@ import {ReserveTimeComponent} from './reserve-time/reserve-time.component';
 import {ProfListComponent} from './prof-list/prof-list.component';
 import {ProfSigninComponent} from './prof-signin/prof-signin.component';
 import {ProfMenuComponent} from './prof-menu/prof-menu.component';
+import {ProfBarComponent} from './prof-bar/prof-bar.component';
+import {ProfHeaderComponent} from './prof-header/prof-header.component';
+
 
 const routes: Routes = [
   { path : '', redirectTo: '/login', pathMatch: 'full'},
@@ -28,7 +31,10 @@ const routes: Routes = [
   { path : 'reserve', component: ReserveTimeComponent},
   { path : 'profs', component: ProfListComponent},
   { path: 'prof-signin', component: ProfSigninComponent},
-  {path: 'prof-menu/:id', component: ProfMenuComponent}
+  {path: 'prof-menu/:id', component: ProfMenuComponent},
+  {path: 'prof-bar', component: ProfBarComponent },
+  { path: 'prof-menu', component: ProfMenuComponent },
+  { path: 'prof-header', component: ProfHeaderComponent }
 ];
 
 @NgModule({

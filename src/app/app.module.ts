@@ -18,6 +18,8 @@ import { ProfListComponent } from './prof-list/prof-list.component';
 import { ReserveTimeComponent } from './reserve-time/reserve-time.component';
 import { ProfSigninComponent } from './prof-signin/prof-signin.component';
 import { ProfMenuComponent } from './prof-menu/prof-menu.component';
+import { ProfBarComponent } from './prof-bar/prof-bar.component';
+import { ProfHeaderComponent } from './prof-header/prof-header.component';
 
 
 
@@ -36,7 +38,9 @@ import { ProfMenuComponent } from './prof-menu/prof-menu.component';
     ProfListComponent,
     ReserveTimeComponent,
     ProfSigninComponent,
-    ProfMenuComponent
+    ProfMenuComponent,
+    ProfBarComponent,
+    ProfHeaderComponent,
   ],
   imports: [
     BrowserModule,
