@@ -22,9 +22,10 @@ export class UnapprovedRequestsComponent implements OnInit {
 
   ngOnInit() {
     this.getProfessor();
+    console.log('pending is being called');
     this.requestsService.showPendingList(this.id).subscribe(pend => {
       this.pending = pend;
-      console.log(pend);
+      console.log('please be logging', this.pending);
     });
   }
 
@@ -33,7 +34,7 @@ export class UnapprovedRequestsComponent implements OnInit {
     console.log(this.id);
     this.profDetailsService.showProfDetails(this.id).subscribe(profs => {
       this.professors = profs;
-      console.log(profs);
+      console.log('profs', profs);
     });
     console.log(this.professors);
   }

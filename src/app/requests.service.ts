@@ -14,14 +14,15 @@ export class RequestsService {
   ) { }
 
   showPendingList(id: number): Observable<PendingRequests[]> { // get list of pending requests
+    console.log('id', id);
     const url = `${this.newPendingURL}/${id}`;
-    console.log('Calling Pending List');
+    console.log(url);
     return this.http.get<PendingRequests[]>(url);
   }
 
   showApprovedList(id: number): Observable<ApprovedRequests[]> { // get list of approved requests
     const url = `${this.newApprovedURL}/${id}`;
-    console.log('Calling Approved List');
+    console.log('id', id);
     return this.http.get<ApprovedRequests[]>(url);
   }
 }
