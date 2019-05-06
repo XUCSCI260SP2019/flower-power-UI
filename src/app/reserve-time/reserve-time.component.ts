@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ReservationsService} from '../reservations.service';
 import { ProfDetailsService} from '../prof-details.service';
 import {ProfDetails} from '../prof-details';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-reserve-time',
@@ -22,6 +23,7 @@ export class ReserveTimeComponent implements OnInit {
   constructor(
     private reservationsService: ReservationsService,
     private profDetailsService: ProfDetailsService,
+    private route: ActivatedRoute,
   ) { }
 
   ngOnInit() {
