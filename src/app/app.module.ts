@@ -20,6 +20,7 @@ import { ProfSigninComponent } from './prof-signin/prof-signin.component';
 import { ProfMenuComponent } from './prof-menu/prof-menu.component';
 import { ProfBarComponent } from './prof-bar/prof-bar.component';
 import { ProfHeaderComponent } from './prof-header/prof-header.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 
 
@@ -41,6 +42,7 @@ import { ProfHeaderComponent } from './prof-header/prof-header.component';
     ProfMenuComponent,
     ProfBarComponent,
     ProfHeaderComponent,
+    ConfirmationComponent,
   ],
   imports: [
     BrowserModule,
