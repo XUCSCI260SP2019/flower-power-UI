@@ -29,9 +29,9 @@ export class UnapprovedRequestsComponent implements OnInit {
   }
 
   getProfessor(): void {
-    const id: number = +this.route.snapshot.paramMap.get('id');
-    console.log(id);
-    this.profDetailsService.showProfDetails(id).subscribe(profs => {
+    this.id = +this.route.snapshot.paramMap.get('id');
+    console.log(this.id);
+    this.profDetailsService.showProfDetails(this.id).subscribe(profs => {
       this.professors = profs;
       console.log(profs);
     });

@@ -4,5 +4,14 @@
   List of Approved Requests:
 </h3>
 
+<ng-container *ngFor="let appr of approved">
+  <div >
+    <h3>{{appr.fullname}}</h3>
+    <h4>{{appr.starttime}}</h4>
+    <h4>{{appr.endtime}}</h4>
+  </div>
+</ng-container>
+
+
 
 <app-footer></app-footer>
