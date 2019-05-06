@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ReservationsService} from '../reservations.service';
-import { Request } from '../request';
+import { ProfDetailsService} from '../prof-details.service';
+import {ProfDetails} from '../prof-details';
 
 @Component({
   selector: 'app-reserve-time',
@@ -15,19 +16,23 @@ export class ReserveTimeComponent implements OnInit {
   endminutes: string;
   endhours: string;
   endtime: string;
+  id: number;
+  professors: ProfDetails;
 
   constructor(
     private reservationsService: ReservationsService,
+    private profDetailsService: ProfDetailsService,
   ) { }
 
   ngOnInit() {
+    this.getProfessor();
   }
 
   reserveTime(): void {
     this.starttime = this.starthours + this.startminutes;
     this.endtime = this.endhours + this.endminutes;
     console.log('this.reserveTime is called');
-    this.reservationsService.requestTime(this.starttime, this.endtime, this.name);
+    this.reservationsService.requestTime(this.id, this.starttime, this.endtime, this.name);
   }
 
   studentName(name: string): void {
@@ -53,6 +58,16 @@ export class ReserveTimeComponent implements OnInit {
   endTimeHour(ehrs: string): void {
     console.log('end hour is recorded');
     this.endhours = ehrs;
+  }
+
+  getProfessor(): void {
+    this.id = +this.route.snapshot.paramMap.get('id');
+    console.log(this.id);
+    this.profDetailsService.showProfDetails(this.id).subscribe(profs => {
+      this.professors = profs;
+      console.log(profs);
+    });
+    console.log(this.professors);
   }
 }
 

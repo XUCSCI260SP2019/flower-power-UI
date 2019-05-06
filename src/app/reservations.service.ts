@@ -12,8 +12,8 @@ export class ReservationsService {
     private http: HttpClient
   ) { }
 
-  requestTime(starttime: string, endtime: string, fullname: string): Observable<Request> { // get details for one professor
-    const url = `${this.newReserveURL}/${starttime}/${endtime}/${fullname}`;
+  requestTime(id: number, starttime: string, endtime: string, fullname: string): Observable<Request> { // get details for one professor
+    const url = `${this.newReserveURL}/${id}/${starttime}/${endtime}/${fullname}`;
     return this.http.get<Request>(url);
   }
 }
