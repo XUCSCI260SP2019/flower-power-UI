@@ -12,7 +12,7 @@ import {ProfDetails} from '../prof-details';
 export class ApprovedRequestsComponent implements OnInit {
   professors: ProfDetails;
   id: number;
-  approved: ApprovedRequests[];
+  approved: Request[];
 
   constructor(
     private requestsService: RequestsService,

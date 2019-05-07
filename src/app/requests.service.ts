@@ -13,16 +13,16 @@ export class RequestsService {
     private http: HttpClient
   ) { }
 
-  showPendingList(id: number): Observable<PendingRequests[]> { // get list of pending requests
+  showPendingList(id: number): Observable<Request[]> { // get list of pending requests
     console.log('id', id);
     const url = `${this.newPendingURL}/${id}`;
     console.log(url);
-    return this.http.get<PendingRequests[]>(url);
+    return this.http.get<Request[]>(url);
   }
 
-  showApprovedList(id: number): Observable<ApprovedRequests[]> { // get list of approved requests
+  showApprovedList(id: number): Observable<Request[]> { // get list of approved requests
     const url = `${this.newApprovedURL}/${id}`;
     console.log('id', id);
-    return this.http.get<ApprovedRequests[]>(url);
+    return this.http.get<Request[]>(url);
   }
 }
