@@ -3,6 +3,7 @@ import { RequestsService} from '../requests.service';
 import {ProfDetails} from '../prof-details';
 import { ActivatedRoute } from '@angular/router';
 import {ProfDetailsService} from '../prof-details.service';
+import { Request} from '../request';
 
 @Component({
   selector: 'app-unapproved-requests',
@@ -12,7 +13,7 @@ import {ProfDetailsService} from '../prof-details.service';
 export class UnapprovedRequestsComponent implements OnInit {
   professors: ProfDetails;
   id: number;
-  pending: PendingRequests[];
+  pending: Request[];
 
   constructor(
     private requestsService: RequestsService,
